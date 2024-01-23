@@ -1,0 +1,9 @@
+targets, factors
+anti_inf_sasp, !(inf_macro & T_cell) & sc | res_sc 
+anti_inf_macro, anti_inf_sasp
+inf_macro, !res_sc & sc
+res_sc, sc 
+sc, !T_cell | anti_inf_sasp & !inf_macro 
+T_cell, sc & !res_sc & !anti_inf_macro
+
+
