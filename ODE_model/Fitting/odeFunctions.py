@@ -1,3 +1,7 @@
+'''This script was adapted from Heldring, M. M. et al. Model-based translation of DNA damage signaling dynamics 
+across cell types. PLOS Comput. Biol. 18, e1010264 (2022).'''
+
+
 # Import all packages
 from sympy import symbols, Piecewise, exp, Matrix, core, diff
 import numpy as np

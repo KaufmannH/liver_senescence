@@ -1,3 +1,8 @@
+'''This script was adapted from Heldring, M. M. et al. Model-based translation of DNA damage signaling dynamics 
+across cell types. PLOS Comput. Biol. 18, e1010264 (2022).'''
+
+
+
 ###################################################
 # Part 0 - Import modules
 ###################################################
@@ -47,16 +52,16 @@ if __name__ == '__main__':
     # Set the model name, the date and the run index, to prevent overwriting output from previous runs
     if not useSysArgv:
         # Model name
-        MODEL = "Model6.13.0"
+        MODEL = "ModelE"
 
         # Define the path to the input folder
-        pathToInputFolder = "Model_6.13.0_13.02/"# "/Users/muriel/Documents/LACDR/Methods/00_OptimPackage/TestModel/"
+        pathToInputFolder = "Input_files/"
 
         # Names of the input files
         # The data file MUST contain a name of 1-5 characters/digits containing info on the data origin
         # (e.g. the treatment) concatenated to 'data'. For example "DMSOdata" or "SIMUdata"
         dataFile = "pathwaydata.csv"
-        odeFile = "Model6.13.0.txt"
+        odeFile = "ModelE.txt"
 
         # Paths to output folder
         pathToOutput = "Output/" + MODEL + "/"
